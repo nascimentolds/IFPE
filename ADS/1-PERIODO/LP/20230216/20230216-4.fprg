@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="temp"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2023-02-22 05:01:14 "/>
+        <attribute name="created" value="dGVtcDtERVNLVE9QLUQ4VkVMSFM7MjAyMy0wMi0yMjsiMDQ6NTA6MjYgIjsyNzE2"/>
+        <attribute name="edited" value="dGVtcDtERVNLVE9QLUQ4VkVMSFM7MjAyMy0wMi0yMjsiMDU6MDE6MTQgIjs1OzI4MjI="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="num1" type="Integer" array="False" size=""/>
+            <declare name="num2" type="Integer" array="False" size=""/>
+            <declare name="total" type="Integer" array="False" size=""/>
+            <declare name="count" type="Integer" array="False" size=""/>
+            <assign variable="count" expression="1"/>
+            <input variable="num1"/>
+            <input variable="num2"/>
+            <assign variable="total" expression="num2"/>
+            <while expression="count &lt; num1">
+                <assign variable="total" expression="total + num2"/>
+                <assign variable="count" expression="count+1"/>
+            </while>
+            <output expression="total" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

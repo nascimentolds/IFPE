@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="20231ADSGR0170"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2023-02-16 09:30:33 "/>
+        <attribute name="created" value="MjAyMzFBRFNHUjAxNzA7R0FSLTE4NzI4NzsyMDIzLTAyLTE2OyIwOToyMjoxNyAiOzI1OTM="/>
+        <attribute name="edited" value="MjAyMzFBRFNHUjAxNzA7R0FSLTE4NzI4NzsyMDIzLTAyLTE2OyIwOTozMDozMyAiOzI7MjY5OQ=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="numero" type="Real" array="False" size=""/>
+            <input variable="numero"/>
+            <while expression="numero == 0">
+                <input variable="numero"/>
+            </while>
+            <if expression="numero &lt; 0">
+                <then>
+                    <output expression="&quot;Negativo&quot;" newline="True"/>
+                </then>
+                <else>
+                    <output expression="&quot;Positivo&quot;" newline="True"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

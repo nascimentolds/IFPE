@@ -1,0 +1,35 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="20231ADSGR0170"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2023-02-16 09:41:48 "/>
+        <attribute name="created" value="MjAyMzFBRFNHUjAxNzA7R0FSLTE4NzI4NzsyMDIzLTAyLTE2OyIwOTozNjoyOCAiOzI2MDA="/>
+        <attribute name="edited" value="MjAyMzFBRFNHUjAxNzA7R0FSLTE4NzI4NzsyMDIzLTAyLTE2OyIwOTo0MTo0OCAiOzE7MjcwNg=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="n1, n2, n3, maior" type="Real" array="False" size=""/>
+            <input variable="n1"/>
+            <input variable="n2"/>
+            <input variable="n3"/>
+            <assign variable="maior" expression="n1"/>
+            <if expression="n2 &gt; maior">
+                <then>
+                    <assign variable="maior" expression="n2"/>
+                </then>
+                <else>
+                    <if expression="n3 &gt; maior">
+                        <then>
+                            <assign variable="maior" expression="n3"/>
+                        </then>
+                        <else/>
+                    </if>
+                </else>
+            </if>
+            <output expression="maior" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>
