@@ -1,7 +1,7 @@
 # Crie um programa que leia um arquivo com nomes diversos 
 # e gere outro arquivo com grupos de cinco pessoas escolhidas 
-# aleatóriamente. Caso fiquem pessoas sobrando, alocar essas 
-# pessoas nos grupos ja criados formando assim alguns grupos 
+# aleatoriamente. Caso fiquem pessoas sobrando, alocar essas 
+# pessoas nos grupos ja criados, formando assim alguns grupos 
 # de seis pessoas.
 
 from random import choice
