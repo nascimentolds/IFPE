@@ -1,74 +1,62 @@
 from random import choice
-from time import sleep
+arquivo = open('lista.txt', 'r', encoding="utf-8")
 
 lista = []
+sorteio = []
 
-j1 = ['Jose', 'Bruno', 'Lucas', 'Eduardo', 'Pedro',
-      'Luciano', 'Vitor', 'Diego', 'Rômulo', '*Pisca']
-j2 = ['Carlinhos', 'Carlos', 'Davi', 'Thiago', 'Paulo',
-      'Igor', 'Felipe', 'Marcelo', 'Matheus', 'Fabio']
-j3 = ['Artur', 'Anderson', 'Gustavo', 'Rogerio', 'Marcus',
-      'Nando', 'Jorge', 'Rodrigo', 'Caio', 'Jonas']
+# Copiando os nomes que estão no arquivo para a lista
+for nome in arquivo:
+    val = nome.split()
+    lista.append(val[0])
 
-for c in range(1, 11):
-    print('PROCESSANDO.....')
-    sleep(2)
-    print('-' * 20)
-    print(f'      \033[34mEQUIPE {c}\033[m')
-    print('-' * 20)
-    #
-    j1_player = choice(j1)
-    j1.remove(j1_player)
-    j2_player = choice(j2)
-    j2.remove(j2_player)
-    j3_player = choice(j3)
-    j3.remove(j3_player)
-    #
-    sorteio = (f'{j1_player}\n'
-               f'{j2_player}\n'
-               f'{j3_player}')
-    print(sorteio)
-    print('-' * 20)
+arquivo.close()
 
+# Criando os grupos usando o choice para escolher aleatoriamente
+# em seguida remove o nome da lista principal.
+# Enquanto a lista for divisilvel por cinco, cria grupos de cinco
+# Se não cria grupos de seis.
+for nome in lista:
+    if len(lista) % 5 == 0:
+        nome1 = choice(lista)
+        lista.remove(nome1)
+        nome2 = choice(lista)
+        lista.remove(nome2)
+        nome3 = choice(lista)
+        lista.remove(nome3)
+        nome4 = choice(lista)
+        lista.remove(nome4)
+        nome5 = choice(lista)
+        lista.remove(nome5)
 
-# import random
+        sorteio.append([nome1, nome2, nome3, nome4, nome5])
+    else:
+        nome1 = choice(lista)
+        lista.remove(nome1)
+        nome2 = choice(lista)
+        lista.remove(nome2)
+        nome3 = choice(lista)
+        lista.remove(nome3)
+        nome4 = choice(lista)
+        lista.remove(nome4)
+        nome5 = choice(lista)
+        lista.remove(nome5)
+        nome6 = choice(lista)
+        lista.remove(nome6)
 
-# arquivo = open('lista.txt', 'r', encoding="utf-8")
-# nomes = arquivo.readlines()
+        sorteio.append([nome1, nome2, nome3, nome4, nome5, nome6])
 
-# lista = [[] for _ in range(3)]
+# Imprimindo em arquivo a listagem dos grupos criados.
+lista_sorteio = open("sorteio.txt", "w", encoding="utf-8")
+c = 1
+for grupos in sorteio:
+    print('-' * 20, file=lista_sorteio)
+    print(f'grupo {c}', file=lista_sorteio)
+    print('-' * 20, file=lista_sorteio)
 
-# for lista in range(3):
-#     print(lista)
+    for nome in grupos:
+        print(nome, file=lista_sorteio)
 
-# # while len(lista) < 3:
-# #     for x in lista:
-# #         print("lista")
+    print(file=lista_sorteio)
+    c += 1
 
-#     # sel = random.choice(nomes)
-
-#     # if sel not in lista[0]:
-#     #     lista[0].append(sel)
-
-# # while len(lista) < 3:
-# #     lista.append(l)
-
-# # arquivo.close()
-
-# # print(l)
-# # print(lista)
-
-# # for nome in lista:
-# #     print(nome)
-
-# # while len(lista) < 3:
-# #     sel = random.choice(nomes)
-# #     if sel not in lista:
-# #         lista.append(sel)
-
-
-# # while len(lista[0]) < 3:
-# #     sel = random.choice(nomes)
-
-# #     if sel not in lista[0]:
-# #         lista[0].append(sel)
+lista_sorteio.close()
