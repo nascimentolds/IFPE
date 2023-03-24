@@ -2,7 +2,7 @@
 # e gere outro arquivo com grupos de cinco pessoas escolhidas 
 # aleatoriamente. Caso fiquem pessoas sobrando, alocar essas 
 # pessoas nos grupos ja criados, formando assim alguns grupos 
-# de seis pessoas.
+# com seis pessoas.
 
 from random import choice
 arquivo = open('lista.txt', 'r', encoding="utf-8")
