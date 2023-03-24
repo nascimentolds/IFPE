@@ -1,29 +1,29 @@
 --------------------
 grupo 1
 --------------------
+Marcondes
 Marcos
 Leonizia
-Marielke
-Marcondes
-Ketlen
-Fábio
+André
+Leo
+Rogê
 
 --------------------
 grupo 2
 --------------------
-Leo
-Rogê
 Marcio
+Ketlen
+Ricky
+Karen
 Manuela
-Kevin
-Marcelo
+Fábio
 
 --------------------
 grupo 3
 --------------------
-Ricky
-Bruno
+Marielke
+Marcelo
 Marcus
-Karen
-André
+Bruno
+Kevin
 
