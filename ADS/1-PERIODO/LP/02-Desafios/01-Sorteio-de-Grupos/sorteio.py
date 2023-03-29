@@ -2,64 +2,62 @@
 # e gere outro arquivo com grupos de cinco pessoas escolhidas 
 # aleatoriamente. Caso fiquem pessoas sobrando, alocar essas 
 # pessoas nos grupos ja criados, formando assim alguns grupos 
-# com seis pessoas.
+# maiores que 5 pessoas.
 
 from random import choice
 arquivo = open('lista.txt', 'r', encoding="utf-8")
 
-lista = []
-sorteio = []
+nomes = []
+grupos = []
 
 # Copiando os nomes que estão no arquivo para a lista
 for nome in arquivo:
     val = nome.split()
-    lista.append(val[0])
+    nomes.append(val[0])
 
 arquivo.close()
 
 # Criando os grupos usando o choice para escolher aleatoriamente
 # em seguida remove o nome da lista principal.
-# Enquanto a lista for divisilvel por cinco, cria grupos de cinco
-# Se não cria grupos de seis.
-for nome in lista:
-    if len(lista) % 5 == 0:
-        nome1 = choice(lista)
-        lista.remove(nome1)
-        nome2 = choice(lista)
-        lista.remove(nome2)
-        nome3 = choice(lista)
-        lista.remove(nome3)
-        nome4 = choice(lista)
-        lista.remove(nome4)
-        nome5 = choice(lista)
-        lista.remove(nome5)
+# Enquanto a lista for maior ou igual a cinco, cria grupos de cinco
+while len(nomes) >= 5: 
+    nome1 = choice(nomes)
+    nomes.remove(nome1)
+    nome2 = choice(nomes)
+    nomes.remove(nome2)
+    nome3 = choice(nomes)
+    nomes.remove(nome3)
+    nome4 = choice(nomes)
+    nomes.remove(nome4)
+    nome5 = choice(nomes)
+    nomes.remove(nome5)
 
-        sorteio.append([nome1, nome2, nome3, nome4, nome5])
-    else:
-        nome1 = choice(lista)
-        lista.remove(nome1)
-        nome2 = choice(lista)
-        lista.remove(nome2)
-        nome3 = choice(lista)
-        lista.remove(nome3)
-        nome4 = choice(lista)
-        lista.remove(nome4)
-        nome5 = choice(lista)
-        lista.remove(nome5)
-        nome6 = choice(lista)
-        lista.remove(nome6)
+    grupos.append([nome1, nome2, nome3, nome4, nome5])
+   
+# Adiciona os remanecentes da lista aos grupos ja existentes
+# A variável i é utilizada para controlar em qual grupo o próximo 
+# nome deve ser adicionado. Se todos os grupos já tiverem recebido um nome, 
+# i é reiniciado para o primeiro grupo novamente.
+i = 0
+while nomes:
+    if i == len(grupos):
+        i = 0
 
-        sorteio.append([nome1, nome2, nome3, nome4, nome5, nome6])
-
+    grupo = grupos[i]
+    nome = nomes.pop(0)
+    grupo.append(nome)
+    i += 1
+    
+    
 # Imprimindo em arquivo a listagem dos grupos criados.
-lista_sorteio = open("sorteio.txt", "w", encoding="utf-8")
+lista_sorteio = open("grupos.txt", "w", encoding="utf-8")
 c = 1
-for grupos in sorteio:
+for grupo in grupos:
     print('-' * 20, file=lista_sorteio)
     print(f'grupo {c}', file=lista_sorteio)
     print('-' * 20, file=lista_sorteio)
 
-    for nome in grupos:
+    for nome in grupo:
         print(nome, file=lista_sorteio)
 
     print(file=lista_sorteio)
