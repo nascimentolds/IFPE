@@ -2,7 +2,14 @@
 # e gere outro arquivo com grupos de cinco pessoas escolhidas 
 # aleatoriamente. Caso fiquem pessoas sobrando, alocar essas 
 # pessoas nos grupos ja criados, formando assim alguns grupos 
-# maiores que 5 pessoas.
+# com 6 pessoas.
+
+# O programa deve receber como entrada um arquivo de texto (.txt) 
+# onde cada linha contém um nome de um aluno e deve distribuir 
+# os participantes aleatoriamente em grupos de 5 pessoas. 
+# Caso sobrem alguns alunos, estes devem ser distribuidos 
+# entre os grupos formados, de forma que ao final do sorteio, 
+# nenhum grupo tenha mais que 6 participantes.
 
 from random import choice
 arquivo = open('lista.txt', 'r', encoding="utf-8")
@@ -54,7 +61,7 @@ lista_sorteio = open("grupos.txt", "w", encoding="utf-8")
 c = 1
 for grupo in grupos:
     print('-' * 20, file=lista_sorteio)
-    print(f'grupo {c}', file=lista_sorteio)
+    print(f'GRUPO {c}', file=lista_sorteio)
     print('-' * 20, file=lista_sorteio)
 
     for nome in grupo:
