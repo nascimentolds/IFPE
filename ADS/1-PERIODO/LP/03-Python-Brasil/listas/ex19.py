@@ -57,7 +57,7 @@ print('-' * 57)
 # Validação para verificar se os votos estão dentro dos paramentros 
 # solicitados e adicionando os votos a lista
 while True:
-    voto = int(input('Qual a sua opção? '))
+    voto = int(input('Digite seu voto (0 para encerrar): '))
     
     if voto > 0 and voto <= 6:
         if voto == 1: sistemas_operacionais[0][1] += 1
