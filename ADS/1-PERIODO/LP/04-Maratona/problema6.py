@@ -9,11 +9,17 @@ novo = []
 for i in n:
     if i in A:
         l = A.index(i) + pos
-        novo.append(A[l])
+        if l > 25:
+            novo.append(A[l - 26])
+        else:
+            novo.append(A[l])
         
     if i in a:
         s = a.index(i) + pos
-        novo.append(a[s])
+        if s > 25:
+            novo.append(a[s - 26])
+        else:
+            novo.append(a[s])
 
 for nv in novo:
     print(nv, end='')
