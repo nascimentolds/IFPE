@@ -2,18 +2,25 @@
 pessoas = []
 
 while True:
-    e = input('Digite a entrada: ').split()
-    if e[0] == '-1':
+    entrada = input("Digite o comando: ").split()
+
+    if entrada[0] == '-1':
         break
-    else:
-        if e[0] == 'add':
-            if not pessoas:
-                pessoas.append([e[1], e[2], e[3], e[4], e[5]])
-            else:
-                for p in pessoas:
-                    if e[1] == p[0]:
-                        print('Pessoa ja existe!')
-                    else:
-                        pessoas.append([e[1], e[2], e[3], e[4], e[5]])
+    
+    elif entrada[0] == "add":
+        id = int(entrada[1])
+        first_name = entrada[2]
+        last_name = entrada[3]
+        birtday = entrada[4]
+        phone_number = entrada[5]
+        
+        # Verifica se já existe um indivíduo com o mesmo ID
+        if any(pessoa['id'] == id for pessoa in pessoas):
+            print("Erro: já existe um indivíduo com o mesmo ID")
+        else:
+            # Adiciona o indivíduo à lista de pessoas
+            pessoas.append({'id': id, 'first_name': first_name, 'last_name': last_name, 'birtday': birtday, 'phone_number': phone_number})
+                        
+
         
 print(pessoas)

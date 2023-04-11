@@ -21,3 +21,5 @@ if o == "S":
     print(soma)
 else:
     print(f'{media:.1f}')
+
+for i in lista: print(i)
