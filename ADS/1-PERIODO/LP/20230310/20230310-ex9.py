@@ -7,10 +7,10 @@ sec = 1
 aux = 1
 
 for i in range(termo):
-    print(fir)
-    
     if fir < sec:
         fir = aux
         aux = sec
-        sec = sec + fir    
+        sec = sec + fir
+
+    print(fir)
           
