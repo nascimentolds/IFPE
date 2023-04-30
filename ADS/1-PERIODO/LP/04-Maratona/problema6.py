@@ -23,4 +23,3 @@ for i in n:
 
 for nv in novo:
     print(nv, end='')
-
