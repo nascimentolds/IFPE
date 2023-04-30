@@ -30,3 +30,5 @@ while see == True:
             see = False
         else:
             see = False
+
+print(alunos)
