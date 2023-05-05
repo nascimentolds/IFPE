@@ -4,7 +4,7 @@ new = txt.split(' ')
 tpl = ()
 
 for i in new:
-    if (i, len(i)) not in tpl:
-        tpl = tpl + ((i, len(i)),)
+    if (i, new.count(i)) not in tpl:
+        tpl = tpl + ((i, new.count(i)),)
 
 print(tpl)

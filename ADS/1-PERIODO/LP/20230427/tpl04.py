@@ -1,7 +1,7 @@
 alunos = []
 
 while True:
-    nome = input('Digite o nome: ')
+    nome = input('Digite o nome: ').upper()
     idade = int(input('Digite a idade: '))
     nota = int(input('Digite a nota: '))
 
@@ -20,7 +20,7 @@ print('-' * 15)
 
 see = True
 while see == True:
-    busca = input('Busque pelo nome: ')
+    busca = input('Busque pelo nome: ').upper()
 
     print('-' * 15)
 
