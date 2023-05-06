@@ -67,7 +67,7 @@ while True:
             busca = input('Digite o nome da pessoa: ').upper()
             
             if busca in telefones:
-                if len(telefones[busca]) == 1:
+                if len(telefones[busca]) <= 1:
                     telefones.pop(busca)
                     print('Telefone excluido!')
                     break
