@@ -5,4 +5,4 @@ def reverso(n):
     n = str(n)
     return n[::-1]
 
-print(reverso(127))
+print(reverso(1275))
