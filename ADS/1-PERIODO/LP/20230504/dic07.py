@@ -9,46 +9,46 @@ r = random
 
 # Criando as listas que serão usadas no sistema
 palavras = ['PONTE', 'CHAVE', 'MARTELO', 'ARARA', 'PSICOLOGO', 'REFRIGERANTE', 'GUITARRA', 'BRASIL', 'PERNAMBUCO']
-dica = ['POR CIMA', 'ABRE', 'BATE', 'PÁSSARO', 'PROFISSÃO', 'BEBIDA', 'INSTRUMENTO', 'PAIS', 'ESTADO']
+dicas = ['POR CIMA', 'ABRE', 'BATE', 'PÁSSARO', 'PROFISSÃO', 'BEBIDA', 'INSTRUMENTO', 'PAIS', 'ESTADO']
 
 # Lista para armazenar todas as letras corretas
-escolha = []
+letras_corretas = []
 
 # Lista para armazenar todas as letras escolhidas
-letras = []
+letras_escolhidas = []
 
 # definindo o indice de pesquisa aleatório para a escolha da palavra
-op = r.randrange(len(palavras))
+indice_aleatorio = r.randrange(len(palavras))
 
 # Iniciando o contador de jogadas
 c = 0
 jogadas = 6
 
 # Escolhendo a palavra para o jogo
-palavra = palavras[op]
+palavra_escolhida = palavras[indice_aleatorio]
 
 # Imprimindo a dica
 print('-' * 20)
-print('Dica:', dica[op])
+print('Dica:', dicas[indice_aleatorio])
 print('-' * 20)
 
 # Criando o tabuleiro do jogo
-for p in palavra:
-    escolha.append('_')
+for p in palavra_escolhida:
+    letras_corretas.append('_')
    
 while True:
     print()
     # Solicitando a letra ao usuário
-    guess = input('Digite uma letra: ').upper()
+    palpite = input('Digite uma letra: ').upper()
     
     # Verifica se a letra ja foi digitada antes.
     # Se não foi, verifica se a letra é compativel com as letras da palavra.
-    if guess not in letras:  
-        letras.append(guess)  
-        if guess in palavra:
-            for p in range(len(palavra)):
-                if guess == palavra[p]:
-                    escolha[p] = guess
+    if palpite not in letras_escolhidas:  
+        letras_escolhidas.append(palpite)  
+        if palpite in palavra_escolhida:
+            for p in range(len(palavra_escolhida)):
+                if palpite == palavra_escolhida[p]:
+                    letras_corretas[p] = palpite
         else:            
             c += 1
             print(f'Você errou pela {c}º vez')
@@ -59,22 +59,22 @@ while True:
         
     # Criando a apresentação da adivinhação e a palavra
     # que será com parada com palavra escolhida aleatóriamente para adivinhação.
-    g = ''
-    s = ''
-    for i in escolha:
-        g += i
-        s += i + ' '    
+    palpite_final = ''
+    mostra_palpites = ''
+    for i in letras_corretas:
+        palpite_final += i
+        mostra_palpites += i + ' '    
     
     # Imprimindo a tentativa de adivinhação com as letras ecolhidas.
     print()
-    print(f'A palavra é: {s}')
+    print(f'A palavra é: {mostra_palpites}')
     print()
     
     # Verifica se a palavra final é igual a palavra escolhida.
     # Caso seja igual, o usuário ganha.
-    if g == palavra:
+    if palpite_final == palavra_escolhida:
         print('-' * 40)
-        print(f'Você ganhou! A palavra é {palavra}!')
+        print(f'Você ganhou! A palavra é {palavra_escolhida}!')
         print('-' * 40)
         break
     
@@ -82,6 +82,6 @@ while True:
     # se zerar a quantidade de jogadas o usuário perde.
     if c == jogadas:
         print('-' * 40)
-        print(f'Você perdeu! A palavra é {palavra}!')
+        print(f'Você perdeu! A palavra é {palavra_escolhida}!')
         print('-' * 40)
         break
