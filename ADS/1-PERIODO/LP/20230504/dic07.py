@@ -10,7 +10,11 @@ r = random
 # Criando as listas que serão usadas no sistema
 palavras = ['PONTE', 'CHAVE', 'MARTELO', 'ARARA', 'PSICOLOGO', 'REFRIGERANTE', 'GUITARRA', 'BRASIL', 'PERNAMBUCO']
 dica = ['POR CIMA', 'ABRE', 'BATE', 'PÁSSARO', 'PROFISSÃO', 'BEBIDA', 'INSTRUMENTO', 'PAIS', 'ESTADO']
+
+# Lista para armazenar todas as letras corretas
 escolha = []
+
+# Lista para armazenar todas as letras escolhidas
 letras = []
 
 # definindo o indice de pesquisa aleatório para a escolha da palavra
@@ -48,6 +52,8 @@ while True:
         else:            
             c += 1
             print(f'Você errou pela {c}º vez')
+            if c == 5:
+                print('Se você errar mais uma vez você perde!')
     else:
         print('Voce já digitou essa letra')
         
