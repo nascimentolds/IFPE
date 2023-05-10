@@ -52,7 +52,7 @@ while True:
         else:            
             c += 1
             print(f'Você errou pela {c}º vez')
-            if c == 5:
+            if c == jogadas - 1:
                 print('Se você errar mais uma vez você perde!')
     else:
         print('Voce já digitou essa letra')
