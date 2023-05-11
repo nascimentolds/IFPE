@@ -59,11 +59,11 @@ while True:
         
     # Criando a apresentação da adivinhação e a palavra
     # que será com parada com palavra escolhida aleatóriamente para adivinhação.
-    palpite_final = ''
-    mostra_palpites = ''
-    for i in letras_corretas:
-        palpite_final += i
-        mostra_palpites += i + ' '    
+    palpite_final = ''.join(letras_corretas)
+    mostra_palpites = ' '.join(letras_corretas)
+    # for i in letras_corretas:
+    #     palpite_final += i
+    #     mostra_palpites += i + ' '    
     
     # Imprimindo a tentativa de adivinhação com as letras ecolhidas.
     print()
