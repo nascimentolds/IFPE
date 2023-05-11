@@ -8,8 +8,8 @@ import random
 r = random
 
 # Criando as listas que serão usadas no sistema
-palavras = ['PONTE', 'CHAVE', 'MARTELO', 'ARARA', 'PSICOLOGO', 'REFRIGERANTE', 'GUITARRA', 'BRASIL', 'PERNAMBUCO']
-dicas = ['POR CIMA', 'ABRE', 'BATE', 'PÁSSARO', 'PROFISSÃO', 'BEBIDA', 'INSTRUMENTO', 'PAIS', 'ESTADO']
+palavras = ['PONTE', 'CHAVE', 'MARTELO', 'ARARA', 'PSICOLOGO', 'REFRIGERANTE', 'GUITARRA', 'BRASIL', 'PERNAMBUCO', 'SERRA TALHADA']
+dicas = ['POR CIMA', 'ABRE', 'BATE', 'PÁSSARO', 'PROFISSÃO', 'BEBIDA', 'INSTRUMENTO', 'PAIS', 'ESTADO', 'CIDADE']
 
 # Lista para armazenar todas as letras corretas
 letras_corretas = []
