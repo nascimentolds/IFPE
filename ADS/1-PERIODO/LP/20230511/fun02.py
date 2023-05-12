@@ -38,6 +38,8 @@ else:
         jogada_nova = dados()        
         soma_nova = sum(jogada_nova)
         
+        print(jogada_nova)
+        
         if soma_nova == soma:
             print(f'{soma_nova} - Parabéns! Você ganhou.')
             break
