@@ -14,46 +14,36 @@ def dados():
 
     return [dado1, dado2]
 
-c = 1
-win = 0
+jogada = dados()
+print(f'Jogada - {jogada}')
+print()
 
-while True:
-    jogada = sum(dados())
+soma = sum(jogada)
 
-    if c == 1: 
-        if jogada == 7 or jogada == 11:
-            # Natural
-            print(f'{jogada} Você tirou um "natural" e ganhou.')
+if soma == 7 or soma == 11:
+    # Natural
+    print(f'{soma} - Você tirou um "natural". Você ganhou.')
+
+elif soma == 2 or soma == 3 or soma == 12:
+    # Craps
+    print(f'{soma} - Você tirou um "craps". Você perdeu.')
+    
+else:
+    print(f'Você tirou um {soma} e deve tirar o mesmo número para ganhar.')
+    print(f'Mas se tirar um 7 antes disso, você perde')
+    print()
+    input(f'{soma} - Aperte "ENTER" para continuar jogando.')
+    print()
+    while True:
+        jogada_nova = dados()        
+        soma_nova = sum(jogada_nova)
+        
+        if soma_nova == soma:
+            print(f'{soma_nova} - Parabéns! Você ganhou.')
             break
-
-        if jogada == 2 or jogada == 3 or jogada == 12:
-            # Craps
-            print(f'{jogada} Você tirou um "craps" e perdeu.')
+        elif soma_nova == 7:
+            print(f'{soma_nova} - Sinto muito! Você perdeu.')
             break
         else:
-            c += 1
-            win = jogada
-            print(win)
-
-    # elif jogada == 7:
-    #     # Perde
-    #     c += 1
-    #     print(f'{jogada} Você perdeu na jogada numero {c}')
-    #     break
-
-    else:
-        # Continue
-        while True:
-            jogada = sum(dados())
-            print(win)
-            if jogada == win:
-                c += 1
-                print(f'{jogada} Você ganhou na jogada numero {c}')
-                break
-            elif jogada == 7:
-                c += 1
-                print(f'{jogada} Você perdeu na jogada numero {c}')
-                break
-            else:
-                input(f'Você tirou {jogada} aperte "ENTER" para continuar')
-        break
+            input(f'{soma_nova} - Aperte "ENTER" para continuar jogando.')
+            print()
