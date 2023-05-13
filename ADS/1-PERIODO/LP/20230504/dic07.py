@@ -58,7 +58,7 @@ while True:
         print('Voce já digitou essa letra')
         
     # Criando a apresentação da adivinhação e a palavra
-    # que será com parada com palavra escolhida aleatóriamente para adivinhação.
+    # que será comparada com palavra escolhida aleatóriamente para adivinhação.
     palpite_final = ''.join(letras_corretas)
     mostra_palpites = ' '.join(letras_corretas)
     # for i in letras_corretas:
