@@ -5,6 +5,13 @@
 
 def multiplos(n):
     for i in range(1, n+1):
-        print(i)
-
-multiplos(15)
+        if i < n and i % 3 == 0 and i % 5 == 0:
+            print(f'{i} - FizzBuzz')
+        elif i < n and i % 5 == 0:
+            print(f'{i} - Buzz')
+        elif i < n and i % 3 == 0:
+            print(f'{i} - Fizz')
+        else:
+            print(i)
+            
+multiplos(30)
