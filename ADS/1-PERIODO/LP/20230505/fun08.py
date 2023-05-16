@@ -50,7 +50,7 @@ def excluir_telefone(pessoa, telefone):
     
 def excluir_pessoa(pessoa):
     telefones.pop(pessoa)
-    print('Telefone excluido!')
+    print('Pessoa excluida!')
     
 def pessoa_nao_encontrada(busca):
     o = input('Pessoa não encontrada, Deseja incluir? S/N: ').upper()
