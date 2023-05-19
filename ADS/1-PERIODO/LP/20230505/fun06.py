@@ -4,7 +4,7 @@
 
 
 def potencia(a, b):
-    pot = 0    
+    pot = 1    
     for i in range(b):
         pot = a * a
         
