@@ -5,7 +5,8 @@ import random
 r = random
 
 def embaralhar(s):
-    p = [i for i in s]
+    st = s.lower()
+    p = [i for i in st]
     vogais = ['a','e','i','o','u']  
     palavra = ''
     
@@ -17,6 +18,6 @@ def embaralhar(s):
             
     return palavra
 
-st = input('Digite uma palavra: ').lower()
+st = input('Digite uma palavra: ')
 print()   
 print(f'{st} - {embaralhar(st)}')
