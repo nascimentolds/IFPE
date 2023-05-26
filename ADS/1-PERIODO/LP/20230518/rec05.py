@@ -8,5 +8,5 @@ def inverter(lista, n):
       lista[0], lista[n-1] = lista[n-1], lista[0]
       return [lista[0]] + inverter(lista[1:n-1], n-2) + [lista[n-1]]
   
-lista = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+lista = [1, 2, 3, 4, 5]
 print(inverter(lista, len(lista)))

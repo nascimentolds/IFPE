@@ -3,9 +3,8 @@
 
 def binary(n):
   if n == 0:
-    bi = 0
+    return 0
   else:
-    bi = n % 2 + 10 * binary(n // 2)
-  return bi
+    return n % 2 + 10 * binary(n // 2)
 
 print(binary(10))
