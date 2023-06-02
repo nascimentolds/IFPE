@@ -1,0 +1,6 @@
+Marcelo 10 8 9 5 7 10
+Ketlen 10 8 9 5 7
+Kevin 10 8 7 10
+Karen 8 9 5 7 10
+Marcio 10 8 9 5 7 10 6 4
+Marcondes 10 8 9 5 10
