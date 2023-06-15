@@ -11,6 +11,6 @@ def digitos(n, k):
 
 # Exemplo de uso
 numero = 7620211920
-digito = 0
+digito = 2
 ocorrencias = digitos(numero, digito)
 print(f"O dígito {digito} ocorre {ocorrencias} vezes no número {numero}.")

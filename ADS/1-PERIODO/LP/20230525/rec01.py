@@ -9,4 +9,4 @@ def palindromo(palavra):
   else:
       return False
       
-print(palindromo('ai la'))
+print(palindromo('arara'))

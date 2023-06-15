@@ -8,7 +8,7 @@ def div(m, n):
     else:
         return 1 + div(m-n, n)
 
-print(div(21, 3))
+print(div(22, 3))
 
 # def fat(n):
 #     if n == 0:
