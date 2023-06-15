@@ -1,0 +1,180 @@
+--------------------
+GRUPO 1
+--------------------
+Ana_Clara
+João
+Amanda
+Fernanda
+Pietro
+
+--------------------
+GRUPO 2
+--------------------
+Isabelly
+Valentina
+Bruno
+Samuel
+Rafaela
+
+--------------------
+GRUPO 3
+--------------------
+João_Pedro
+Vinicius
+Yasmin
+Matheus
+Esther
+
+--------------------
+GRUPO 4
+--------------------
+Lara
+Leonardo
+Antônio
+Enzo
+Bryan
+
+--------------------
+GRUPO 5
+--------------------
+Gabriela
+Nicole
+Emanuelly
+Henrique
+Joaquim
+
+--------------------
+GRUPO 6
+--------------------
+Heloísa
+Isadora
+Thiago
+Rebeca
+Eduardo
+
+--------------------
+GRUPO 7
+--------------------
+Murilo
+Benjamin
+Vitor
+Ian
+Beatriz
+
+--------------------
+GRUPO 8
+--------------------
+Bernardo
+Pedro_Henrique
+Letícia
+Nicolas
+Alice
+
+--------------------
+GRUPO 9
+--------------------
+Ana_Luiza
+Ana_Julia
+Guilherme
+Laura
+Felipe
+
+--------------------
+GRUPO 10
+--------------------
+Lucca
+Ana_Beatriz
+Isaac
+Caio
+Larissa
+
+--------------------
+GRUPO 11
+--------------------
+Emanuel
+Francisco
+Maria_Clara
+Rafael
+João_Gabriel
+
+--------------------
+GRUPO 12
+--------------------
+Cauã
+Alícia
+Clara
+Pedro
+Gabrielly
+
+--------------------
+GRUPO 13
+--------------------
+Catarina
+Lavínia
+Lívia
+João_Miguel
+Maria_Luiza
+
+--------------------
+GRUPO 14
+--------------------
+Davi_Lucas
+Giovanna
+Vitória
+Davi
+Maria_Eduarda
+
+--------------------
+GRUPO 15
+--------------------
+Melissa
+Daniel
+Manuela
+Agatha
+Lorena
+
+--------------------
+GRUPO 16
+--------------------
+Rodrigo
+Carolina
+Maria_Fernanda
+Arthur
+Lorenzo
+
+--------------------
+GRUPO 17
+--------------------
+Heitor
+Gustavo
+João_Vitor
+Sophia
+Lucas
+
+--------------------
+GRUPO 18
+--------------------
+Julia
+Bianca
+Davi_Luiz
+Isabella
+Gabriel
+
+--------------------
+GRUPO 19
+--------------------
+Helena
+Luiza
+Theo
+Mariana
+Cecília
+
+--------------------
+GRUPO 20
+--------------------
+Miguel
+Sarah
+Otávio
+Marina
+Enzo_Gabriel
+
