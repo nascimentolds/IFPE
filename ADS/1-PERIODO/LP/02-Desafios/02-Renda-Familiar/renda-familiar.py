@@ -77,6 +77,13 @@ def insercao_de_familias():
 		}        
         dados["familias"].append(dicionario)        
         inserir_dados_no_arquivo()
+
+        print()
+        print("CPF:", cpf)
+        print("-" * 35)
+        imprimir_dados_da_familia(cpf)
+        print("-" * 35)
+        print("Família cadastrada com sucesso!")
         break
 
 # Se não existir dados no arquivo essa função é chamada    
@@ -100,6 +107,15 @@ def buscar_dados_da_familia():
                     print(f'Renda Média da Família: R$ {familia["resumo"]["renda_media"]:.2f}')
             break
         else: print("CPF inexistente! \n")
+
+# Imprimir dados da familia         
+def imprimir_dados_da_familia(cpf):
+    for familia in dados["familias"]:
+        if familia["cpf"] == cpf:
+            print(f'Quantidade de Membros da Família: {familia["resumo"]["qt_membros"]}')
+            print(f'Renda Total da Família: R$ {familia["resumo"]["renda_total"]:.2f}')
+            print(f'Renda Média da Família: R$ {familia["resumo"]["renda_media"]:.2f}')
+
             
 # Lista todos os CPFs cadastrados
 def listar_cpfs():
@@ -144,7 +160,7 @@ def familias_com_renda_inferior():
 def familias_com_renda_superior():
     count = 0
     for familia in dados["familias"]:
-        if familia["resumo"]["renda_media"] > (SALARIO_MINIMO) * 12: count += 1                
+        if familia["resumo"]["renda_media"] > (SALARIO_MINIMO) * 10: count += 1                
     return count
 
 # Imprime os dados consolidados da cidade
@@ -152,9 +168,9 @@ def dados_cosolidados():
     print("Dados Consolidados")
     print("-" * 30)
     print(f"Renda média da cidade: R$ {renda_media_cidade():.2f}")  
-    print(f"Média de individous por famílias: {media_individous_por_familia():.0f}")
+    print(f"Média de individous por famílias: {media_individous_por_familia()}")
     print(f"Famílias com renda inferior a um salário mínimo: {familias_com_renda_inferior():.0f}%")  
-    print(f"Famílias com renda superior a 12 salários mínimo: {familias_com_renda_superior()}")  
+    print(f"Famílias com renda superior a 10 salários mínimo: {familias_com_renda_superior()}")  
 
 # Prepara os dados e os escreve no arquivo
 def backup_dados(versao):

@@ -1,77 +1,74 @@
 [
-  "15/06/2023 11:29:52 76 v3",
+  "16/06/2023 21:05:59 73 v3",
   {
     "familias": [
       {
-        "cpf": "03758180490",
+        "cpf": "123",
         "membros": {
-          "1": 2900,
-          "2": 150,
-          "3": 150,
-          "4": 150
-        },
-        "resumo": {
-          "qt_membros": 4,
-          "renda_total": 3350,
-          "renda_media": 837.5
-        }
-      },
-      {
-        "cpf": "12345678965",
-        "membros": {
-          "1": 9000,
-          "2": 15000
+          "1": 1800,
+          "2": 3000
         },
         "resumo": {
           "qt_membros": 2,
-          "renda_total": 24000,
-          "renda_media": 12000.0
+          "renda_total": 4800,
+          "renda_media": 2400.0
         }
       },
       {
-        "cpf": "78945612345",
+        "cpf": "456",
         "membros": {
-          "1": 8000,
-          "2": 7000,
-          "3": 25000,
-          "4": 9800,
-          "5": 12000,
-          "6": 3600
+          "1": 15000
         },
         "resumo": {
-          "qt_membros": 6,
-          "renda_total": 65400,
-          "renda_media": 10900.0
+          "qt_membros": 1,
+          "renda_total": 15000,
+          "renda_media": 15000.0
         }
       },
       {
-        "cpf": "96385274165",
+        "cpf": "789",
         "membros": {
-          "1": 25000,
-          "2": 28000
+          "1": 150,
+          "2": 160
         },
         "resumo": {
           "qt_membros": 2,
-          "renda_total": 53000,
-          "renda_media": 26500.0
+          "renda_total": 310,
+          "renda_media": 155.0
         }
       },
       {
-        "cpf": "95175316742",
+        "cpf": "963",
         "membros": {
-          "1": 1000,
-          "2": 2000,
-          "3": 3000,
-          "4": 4000,
-          "5": 5000,
-          "6": 6000,
-          "7": 7000,
-          "8": 8000
+          "1": 60000
         },
         "resumo": {
-          "qt_membros": 8,
-          "renda_total": 36000,
-          "renda_media": 4500.0
+          "qt_membros": 1,
+          "renda_total": 60000,
+          "renda_media": 60000.0
+        }
+      },
+      {
+        "cpf": "852",
+        "membros": {
+          "1": 100,
+          "2": 200
+        },
+        "resumo": {
+          "qt_membros": 2,
+          "renda_total": 300,
+          "renda_media": 150.0
+        }
+      },
+      {
+        "cpf": "741",
+        "membros": {
+          "1": 25000
+        },
+        "resumo": {
+          "qt_membros": 1,
+          "renda_total": 25000,
+          "renda_media": 25000.0
         }
       }
     ]
