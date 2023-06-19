@@ -100,11 +100,7 @@ def buscar_dados_da_familia():
         cpf = input("Digite o CPF: ")
         if cpf in cpfs:
             print("-" * 35)
-            for familia in dados["familias"]:
-                if familia["cpf"] == cpf:
-                    print(f'Quantidade de Membros da Família: {familia["resumo"]["qt_membros"]}')
-                    print(f'Renda Total da Família: R$ {familia["resumo"]["renda_total"]:.2f}')
-                    print(f'Renda Média da Família: R$ {familia["resumo"]["renda_media"]:.2f}')
+            imprimir_dados_da_familia(cpf)
             break
         else: print("CPF inexistente! \n")
 
@@ -168,7 +164,7 @@ def dados_cosolidados():
     print("Dados Consolidados")
     print("-" * 30)
     print(f"Renda média da cidade: R$ {renda_media_cidade():.2f}")  
-    print(f"Média de individous por famílias: {media_individous_por_familia()}")
+    print(f"Média de individous por famílias: {media_individous_por_familia():.2f}")
     print(f"Famílias com renda inferior a um salário mínimo: {familias_com_renda_inferior():.0f}%")  
     print(f"Famílias com renda superior a 10 salários mínimo: {familias_com_renda_superior()}")  
 

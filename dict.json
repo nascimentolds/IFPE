@@ -68,6 +68,17 @@
         "renda_total": 25000,
         "renda_media": 25000.0
       }
+    },
+    {
+      "cpf": "15975345678",
+      "membros": {
+        "1": 5000
+      },
+      "resumo": {
+        "qt_membros": 1,
+        "renda_total": 5000,
+        "renda_media": 5000.0
+      }
     }
   ]
 }
